@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <math.h> 
 #include <string.h>
 #include <stdio.h>
 #include <sys/time.h>
@@ -102,7 +102,7 @@ void Vec3::operator*=(Matrix3x3 other) {
 int main() {
     double i, j; // iterators
     int screen_width = 80; // screen width
-    int screen_height = 44; // screen height
+    int screen_height = 30; // screen height
     int buffer_size = screen_width*screen_height; // compile time calculated buffer_size
 
     float z[buffer_size]; // z-buffer
@@ -111,9 +111,9 @@ int main() {
 
     char R2 = 2; // big radius
     char R1 = 1;// small radius
-    char scale = 7; // scale
+    char distance = 5; // how far donut is
     char K2 = 5; // predefined distance screen:objectOrigin
-    double K1 = screen_width*K2/(scale*(R1+R2));  // distance user:screen
+    double K1 = screen_width*K2/(distance*(R1+R2));  // distance user:screen
     double sini, cosi, // i sin/cos value
            sinj, cosj, // j sin/cos value
            sinA, cosA, // A sin/cos value

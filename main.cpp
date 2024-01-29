@@ -125,7 +125,7 @@ int main() {
     Matrix3x3 rotB; // Rotation matrix around B axile
     double A = 0, B = 0; // degree value for donut rotating around A/B
     printf("\x1b[2J"); // old-scool magic clear screen
-    for(;;) {
+    for(;;) { 
         /** if you really want explanation of things below 
          *  then goto donut.c creator's site by link below
          *  https://www.a1k0n.net/2011/07/20/donut-math.html
